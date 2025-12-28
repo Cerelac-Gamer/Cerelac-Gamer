@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerelac - O Bot Mais Fofo do Discord! 🥣💕</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Pacifico&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #ffeef8, #e0f7fa, #fff9c4);
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Partículas de corações caindo 💖 */
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            animation: fall linear infinite;
+            opacity: 0.7;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-100px); }
+            100% { transform: translateY(100vh); }
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-bottom: 5px solid #ff99cc;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 4em;
+            color: #ff66b2;
+            text-shadow: 3px 3px #fff;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #ff99cc;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+
+        .add-button {
+            display: inline-block;
+            background: #ff66b2;
+            color: white;
+            padding: 20px 40px;
+            font-size: 2em;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 30px;
+            box-shadow: 0 10px 20px rgba(255,102,178,0.4);
+            transition: 0.3s;
+        }
+        .add-button:hover {
+            transform: scale(1.1);
+            background: #ff3399;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.8);
+            padding: 30px;
+            border-radius: 30px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature img {
+            width: 150px;
+            border-radius: 20px;
+        }
+
+        .anime-boys {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .anime-boys img {
+            width: 200px;
+            border-radius: 30px;
+            border: 8px solid #fff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .anime-boys img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        footer {
+            background: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Corações caindo -->
+    <div class="hearts" id="hearts"></div>
+
+    <header>
+        <h1>Cerelac 🥣💕</h1>
+        <p style="font-size:2em;">O bot mais fofo, carinhoso e kawaii do Discord!</p>
+        <img src="https://i.pinimg.com/564x/44/26/5f/44265fd8aa9cb60ad7815ad241e11343.jpg" alt="Garoto anime loiro fofo" class="hero-img">
+        <br>
+        <a href="https://discord.com/oauth2/authorize?client_id=1454102300246413312&permissions=8&integration_type=0&scope=bot" class="add-button" target="_blank">
+            Adiciona-me ao teu servidor! ✨
+        </a>
+        <p>(1454102300246413312)</p>
+    </header>
+
+    <section>
+        <h2>Porquê o Cerelac é o melhor? 🥰</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="https://w0.peakpx.com/wallpaper/201/257/HD-wallpaper-cute-len-vocaloid-music-blonde-hair-smile-sweet-cute-short-hair-hug-boy-blue-eyes-kagamine-len.jpg" alt="Len fofo">
+                <h3>Super Carinhoso</h3>
+                <p>Abraços, beijinhos, cafuné e IA que te trata como VIP! 💕</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.freepik.com/premium-photo/cute-anime-boy-wallpaper_776894-109041.jpg?semt=ais_hybrid&w=740&q=80" alt="Anime boy sorrindo">
+                <h3>Premium Incrível</h3>
+                <p>Imagens AI, jogos, economia de Cerelac's e muito mais! 👑</p>
+            </div>
+            <div class="feature">
+                <img src="https://i.pinimg.com/736x/01/85/e1/0185e1ec8526d1901c8e11d4c02d8f2b.jpg" alt="Garoto loiro kawaii">
+                <h3>Comandos Fofos</h3>
+                <p>;beijar, ;abraço, ;cafuné, jogos da forca e galo... Aww! 🌸</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Garotos Anime Loiros Fofos Especialmente para Ti! ✨</h2>
+        <p>(Inspiração infinita de cuteness loira 💛)</p>
+        <div class="anime-boys">
+            <img src="https://i.pinimg.com/564x/44/26/5f/44265fd8aa9cb60ad7815ad241e11343.jpg" alt="Yukine fofo">
+            <img src="https://w0.peakpx.com/wallpaper/201/257/HD-wallpaper-cute-len-vocaloid-music-blonde-hair-smile-sweet-cute-short-hair-hug-boy-blue-eyes-kagamine-len.jpg" alt="Len kawaii">
+            <img src="https://img.freepik.com/premium-photo/anime-boy-with-blue-eyes-blonde-hair-smiling-camera-generative-ai_958165-27840.jpg?w=360" alt="Boy sorrindo">
+            <img src="https://i.pinimg.com/564x/bd/8f/a6/bd8fa67268301770c253b5a35774f7fd.jpg" alt="Cute drawing">
+            <img src="https://w0.peakpx.com/wallpaper/610/268/HD-wallpaper-len-blonde-hair-boy-anime-light-sexy-smile-short-hair-kagamine-len-cute-vocaloid-green-eyes-hot.jpg" alt="Len hot cute">
+            <img src="https://i.etsystatic.com/46530389/r/il/119699/6170745449/il_1080xN.6170745449_e6ms.jpg" alt="Chibi blonde boy">
+            <img src="https://i.pinimg.com/736x/7f/39/88/7f398802bb92bc13310f999e492ec00c.jpg" alt="Blushing boy">
+            <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/03/Mika.jpg?q=50&fit=crop&w=825&dpr=1.5" alt="Mika adorable">
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com muito amor para o Cerelac 🥣💖 | Todos os direitos das imagens aos respetivos artistas</p>
+        <p>Adiciona o bot e vem ser feliz connosco! ✨</p>
+    </footer>
+
+    <script>
+        // Corações caindo
+        const heartsContainer = document.getElementById('hearts');
+        setInterval(() => {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerText = ['💕','🥣','🌸','✨','💖','🥰'][Math.floor(Math.random()*6)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 5 + 5 + 's';
+            heartsContainer.appendChild(heart);
+            setTimeout(() => heart.remove(), 10000);
+        }, 800);
+    </script>
+</body>
+</html>
